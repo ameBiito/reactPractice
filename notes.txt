@@ -1,0 +1,14 @@
+SOLO PROJECTS: Digital business card(after 1st section), Travel journal(after 2nd section), Quiz game (last)
+
+· There are some things you need to consider when building an application:
+    - User inteface - How users will consume and interact with your application 
+    - Routing - How users will navigate your app 
+    - Data Fetching - Where your data lives and how to get it 
+    - Rendering - When and where you render static or dynamic content 
+    - Integrations - What 3rd party services you use and how to integrate them
+    - Infrastructure - Wjere to deploy, store, and run your application code 
+    - Perfromance 
+    - Scalability
+    - Developer Experience 
+
+· React is a js library used for building interactive UI 
