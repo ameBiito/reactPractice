@@ -12,3 +12,42 @@ SOLO PROJECTS: Digital business card(after 1st section), Travel journal(after 2n
     - Developer Experience 
 
 · React is a js library used for building interactive UI 
+
+· A library is a collection of reusable code 
+    · Reduces need to write repetive things from scratch
+    · There are no boundaries 
+
+· A framework is a predetermined architecture - you follow a specified pattern of development 
+    · You have to work within its boundaries 
+
+· React is composable - We can have more custom components and make them work together 
+· React is Declarative -> That is, it does a lot by itself, opposite to imperative, where every step has to be explained to the computer
+
+· React with JSX creates an object that describes the DOM element we want to insert instead of a simple html element:
+        const element = <h1 className="header">This is JSX</h1>
+        console.log(element)
+        //the resulting object is:
+        /*
+        {
+            type: "h1", 
+            key: null, 
+            ref: null, 
+            props: {
+                className: "header", 
+                children: "This is JSX"
+            }, 
+            _owner: null, 
+            _store: {}
+        }
+        */
+
+· When using JSX, we can return only 1 parent element(you can't put a <div> after another <div> or <p> or whatever):
+        ReactDOM.render(
+            <h1>Hello</h1><p>Hi</p> //error, we can instead wrap this into a parent element
+            <div>
+                <h1>Hello</h1> 
+                <p>Hi</p>
+            </div>,            //this is ok
+            document.getElementById("root")
+        )
+
