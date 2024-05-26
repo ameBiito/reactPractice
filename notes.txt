@@ -51,3 +51,9 @@ SOLO PROJECTS: Digital business card(after 1st section), Travel journal(after 2n
             document.getElementById("root")
         )
 
+· A function that returns markup lines is called a COMPONENT; It has some conventions:
+    1. The function name is pascal-cased, that is: TemporaryName(), CustomComponent(), ... -> The first letter is capital 
+    2· When calling it in render, we need to wrap it into <FunctionName/> without the parentheses:
+            ReactDOM.render(<FunctionName/>, ...)
+
+        
