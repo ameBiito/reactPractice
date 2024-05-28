@@ -1,0 +1,17 @@
+/*Provides styling for App.js*/
+
+
+#main{
+    background-color:blue;
+    width: 40%;
+    border: 10px solid violet;
+    margin-left: 30%;
+    background-image: url("../public/stockMan.png");
+
+}
+.heading, .sub-heading{
+    color: whitesmoke;
+    text-align: center;
+    color:transparent;
+}
+
