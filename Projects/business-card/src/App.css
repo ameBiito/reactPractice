@@ -1,17 +1,72 @@
 /*Provides styling for App.js*/
 
 
-#main{
-    background-color:blue;
-    width: 40%;
-    border: 10px solid violet;
-    margin-left: 30%;
-    background-image: url("../public/stockMan.png");
-
+#main-container{
+    margin: auto;
+    width: 30%;
+    border: 10px solid red;
+    border-radius: 5%;
+    background-image: url("../public/backgr.jpg");
+    background-size: 90%;
 }
-.heading, .sub-heading{
-    color: whitesmoke;
+
+#main-image{
+    border-radius: 40%;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#info{
     text-align: center;
-    color:transparent;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: transparent;
 }
 
+#contact{
+    list-style-type: none;
+    font-weight: 500;
+    margin-left: 35%;
+    
+}
+
+#tel{
+    /*list-style-image: url("../public/phonelogo.png");*/
+    background-image: url("../public/phonelogo.png");
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+#mail{
+    background-image: url("../public/maillogo.jpg");
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+#websi{
+    background-image: url("../public/wblogo.jpeg");
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+#locat{
+    background-image: url("../public/localogo.jpg");
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+#logos{
+    padding-left: 44.5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

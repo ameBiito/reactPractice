@@ -3,11 +3,18 @@
 import React from "react";
 import "./App.css";
 
+import ProfileImage from "./components/ProfileImage";
+import MainInfo from "./components/MainInfo";
+import ContactInfo from "./components/ContactInfo";
+import Footer from "./components/Footer";
+
 const App = () => {
     return(
-        <div id="main">
-            <h1 className="heading">Head</h1>
-            <h4 className="sub-heading">Sub Heading</h4>
+        <div id="main-container">
+            <ProfileImage />
+            <MainInfo />
+            <ContactInfo />
+            <Footer />
         </div>
     );
 };
