@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+#main-container{
+    width: 550px;
+    margin-left: 38%;
+    border-radius: 3%;
+    border: 3px solid lightgray;
+}
+
+#nav{
+    height: 70px;
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+#nav-logo{ 
+    width: 100px;
+}
+
+#hero--image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+#hero--title{
+    font-family:Poppins;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+#hero--p{
+    font-family: Poppins;
+    font-size: 1.5em;
+    margin-top: 10px;
+    padding-right: 75px;
+}
