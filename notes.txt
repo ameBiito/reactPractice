@@ -1,4 +1,4 @@
-SOLO PROJECTS: Digital business card(after 1st section), Travel journal(after 2nd section), Quiz game (last)
+SOLO PROJECTS: Digital business card(after 1st section), airbnb experencies clone(travel journal) (after 2nd section), Quiz game (last)
 
 · There are some things you need to consider when building an application:
     - User inteface - How users will consume and interact with your application 
@@ -56,4 +56,45 @@ SOLO PROJECTS: Digital business card(after 1st section), Travel journal(after 2n
     2· When calling it in render, we need to wrap it into <FunctionName/> without the parentheses:
             ReactDOM.render(<FunctionName/>, ...)
 
-        
+· We can use variables defined is JS code inside a React markup(JSX) by adding {} to surrond the js code:
+        let firstName = "john";
+        let lastName = "doe";
+        let date = new Date();
+        <h1> Hello {firstName} {lastName}</h1> //Hello john doe (as an h1 on a page)
+        <h1> It is now {date.getHours()}:{date.getMinutes()}</h1>
+
+· PROPS are custom properties for custom components that are used to make framework components used in a webpage (it's an object that 
+  contains all custom properties we defined):
+        function Component(props){
+            return (
+                <div>                         //imagine we have several components that follow this framework
+                    <img src={props.img} />  
+                    <h1>{props.name}</h1>
+                    <p>{props.description}<p>
+                </div>
+            );
+        }
+    · Every time we have an instance of Component, the function is called:
+            //...
+            <Component
+                img="./..."
+                name="name"
+                description="lorem"
+            />
+            <Component
+                //...
+            />
+
+· CONDITIONAL RENDERING can be used if we want to render an element only in specific situations. One way to do it is:
+        //...
+        <div>
+            {props.prop && <h1>Prop: {props.prop} </h1>} // if first is falsy, then it won't render 
+        //...
+
+· In order to pass a non-string prop while in markup is using curly braces "{}" :
+        //...
+        <Component
+            name="john"
+            isEmployed={false}  
+            appearences={[ {height: 190}, {weight: 32}, {hair: "dark-brown"} ]}   // an array of objects 
+        / >
