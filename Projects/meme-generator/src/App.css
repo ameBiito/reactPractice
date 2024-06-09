@@ -1,0 +1,54 @@
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#main--container{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+#header--container{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #672280, #A626D3);
+    padding: 20px; /*top and bottom, left and right*/
+}
+
+.header--image{
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.header--title{
+    color: antiquewhite;
+    margin-left: 10px;
+}
+
+#meme--main{
+    padding: 36px;
+}
+
+.meme--form{
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;  /*2 rows 40 px each, 2 columns 1fr each */
+    gap: 17px; /* Gap between stuf inside grid */
+
+}
+
+.form--input{
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+}
+
+.form--button{
+    grid-column: 1 / -1;  /* tells the button in the grid to span from beginning to end*/
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #672280, #A626D3);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
